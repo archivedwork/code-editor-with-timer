@@ -20,9 +20,18 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <p>Haskell Oral Exam Code Editor with Timer</p>
-      <Timer minutes={20}/>
-      <Editor />
+      <h3>Haskell Simple Code Editor with Timer</h3>
+      <div className="container-fluid">
+        <div className="row">
+            <div className="col-md-12">
+              <Timer seconds={2}/>
+            </div>
+            <div className="col-md-12"><Editor /></div>
+           
+          </div>              
+      </div>
+
+      
     </div>
   );
 }

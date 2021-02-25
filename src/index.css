@@ -13,8 +13,12 @@ code {
 }
 
 .custom-width {
-  width: 50%;
+  width: 95%;
   height: 100%;
   
 }
 
+.custom-text-align {
+  /* float: left;*/
+  text-align: left;
+}

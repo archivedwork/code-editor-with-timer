@@ -32,18 +32,28 @@ class Editor extends Component {
    
     render(){
         return (
-            <div className="Editor">
-                {/* <p> Editor Component </p> */}
+            <div className="row">
+                <div className="col-md-6">
                 <textarea
-                    rows="20"
+                    id="txt"
+                    rows="30"
                     className="custom-width"
                     value={this.state.textAreaValue}
                     onChange={this.handleChange}
                     />
-                <SyntaxHighlighter language="haskell" style={docco}>
-               
-                    {codeString}
-                </SyntaxHighlighter>
+                </div>
+
+                <div className="col-md-6">
+                    <div className="custom-text-align">
+                    <SyntaxHighlighter language="haskell" style={docco}>
+                        {codeString}
+                    </SyntaxHighlighter>
+                    </div>
+                </div>
+                {/* <p> Editor Component </p> */}
+                
+                
+                
             </div>
         )
     }
