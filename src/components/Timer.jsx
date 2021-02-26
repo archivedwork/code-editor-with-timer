@@ -23,7 +23,7 @@ const Timer = ({hours = 0, minutes = 0, seconds = 0}) => {
         snd.play();
     }
 
-    
+
     const reset = () => {
         setTime([parseInt(hours), parseInt(minutes), parseInt(seconds)]);
         setPaused(false);
@@ -41,10 +41,10 @@ const Timer = ({hours = 0, minutes = 0, seconds = 0}) => {
     return(
         <div className="Timer">
             {/* <h1>Timer Component</h1> */}
+            <button className="btn btn-danger" onClick={() => reset()}>Restart</button>
             <p>{ `${h.toString().padStart(2, '0')} : ${m.toString().padStart(2, '0')} : ${s.toString().padStart(2, '0')}`}</p>
-            <div>{over ? "Time's Up" : ''}</div>
+            <div>{over ? <div className="alert alert-warning">Time's Up</div> : ''}</div>
             {/* <button onClick={() => setPaused(!paused)}>{paused ? 'Resume' : 'Pause'}</button> */}
-            <button onClick={() => reset()}>Restart</button>
         </div>
     )
 }

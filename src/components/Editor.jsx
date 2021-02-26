@@ -4,11 +4,21 @@ import { Light as SyntaxHighlighter  } from 'react-syntax-highlighter';
 import docco from 'react-syntax-highlighter/dist/esm/styles/hljs/docco';
 
  const codeString = `
-    sayHi :: String 
-    sayHi = "Hello World!"
+module App where
 
-    sayHi :: String -> String
-    sayHi x = "Hello"
+sayHi :: String 
+sayHi = "Hello World!"
+
+sayHi :: String -> String
+sayHi x = "Hello"
+
+-- fact
+fact 0 = 1
+fact 1 = 1
+fact x = x * fact (x-1)
+
+
+
  `;
 
 
@@ -36,7 +46,7 @@ class Editor extends Component {
                 <div className="col-md-6">
                 <textarea
                     id="txt"
-                    rows="30"
+                    rows="25"
                     className="custom-width"
                     value={this.state.textAreaValue}
                     onChange={this.handleChange}
@@ -45,7 +55,7 @@ class Editor extends Component {
 
                 <div className="col-md-6">
                     <div className="custom-text-align">
-                    <SyntaxHighlighter language="haskell" style={docco}>
+                    <SyntaxHighlighter language="haskell" style={docco} >
                         {codeString}
                     </SyntaxHighlighter>
                     </div>
