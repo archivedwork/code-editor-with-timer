@@ -1,0 +1,25 @@
+- name: Run TestCafe
+  # You may pin to the exact commit or the version.
+  # uses: DevExpress/testcafe-action@6114d4290399f0e36ac0be3ca56b6713dc2fab3d
+  uses: DevExpress/testcafe-action@v0.0.3
+  with:
+    # TestCafe version to install from npm
+    version: # optional, default is latest
+    # Branch in the TestCafe repository to check out. The action builds TestCafe from this branch
+    branch: # optional
+    # Commit in the TestCafe repository to check out. The action builds TestCafe from this commit
+    commit: # optional
+    # Command line arguments passed to TestCafe
+    args: - name: Run TestCafe
+  # You may pin to the exact commit or the version.
+  # uses: DevExpress/testcafe-action@6114d4290399f0e36ac0be3ca56b6713dc2fab3d
+  uses: DevExpress/testcafe-action@v0.0.3
+  with:
+    # TestCafe version to install from npm
+    version: # optional, default is latest
+    # Branch in the TestCafe repository to check out. The action builds TestCafe from this branch
+    branch: # optional
+    # Commit in the TestCafe repository to check out. The action builds TestCafe from this commit
+    commit: # optional
+    # Command line arguments passed to TestCafe
+    args: 
