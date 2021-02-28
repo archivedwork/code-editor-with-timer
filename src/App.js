@@ -24,8 +24,8 @@ function App() {
       <div className="container-fluid">
         <div className="row">
             <div className="col-md-12">
-              <Timer seconds={2}/>
-              {/* <Timer minutes={20}/> */}
+              {/* <Timer seconds={2}/> */}
+              <Timer minutes={20}/>
             </div>
             <div className="col-md-12"><Editor /></div>
            
